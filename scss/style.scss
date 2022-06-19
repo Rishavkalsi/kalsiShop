@@ -1,0 +1,161 @@
+@import "./var";
+@import "./common";
+
+.bannerCarousel {
+  height: calc(100vh - 80px);
+  min-height: 400px;
+  .carousel,
+  .carousel-inner,
+  .carousel-item,
+  .bannerSlide {
+    height: 100%;
+  }
+  .bannerSlide {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  .banner_content {
+    position: relative;
+    z-index: 1;
+    h1 {
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    p {
+      color: $textColor;
+    }
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 10%;
+    opacity: 1;
+  }
+  .carousel-control-prev-icon {
+    filter: drop-shadow(2px 0px 2px $primary);
+  }
+  .carousel-control-next-icon {
+    filter: drop-shadow(-2px 0px 2px $primary);
+  }
+}
+.aboutUs {
+  margin-top: 40px;
+  .aboutImg {
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    img {
+      border-radius: 4px;
+      position: relative;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+  .aboutUs_content {
+    h2 {
+      font-weight: 700;
+    }
+  }
+}
+
+// =============== product card ==========
+.products {
+  .cardContent {
+    padding: 10px;
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border: 1px solid #dedede;
+    border-top: none;
+    h5 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: #999;
+      &:hover {
+        color: inherit;
+      }
+    }
+    p {
+      font-size: 14px;
+    }
+    .btn {
+      padding: 4px;
+      line-height: 1;
+      color: #999;
+      font-size: 16px;
+      text-decoration: underline;
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+  .prodctCard_img {
+    overflow: hidden;
+    position: relative;
+    img {
+      transition: 0.9s ease;
+    }
+    .viewBtn {
+      border-radius: 20px;
+      background-color: #fff;
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      padding: 12px 16px;
+      font-size: 15px;
+      min-width: 120px;
+      text-align: center;
+      line-height: 1;
+      font-family: "Muli", sans-serif;
+      transition: 0.3s ease-in-out;
+    }
+    &:hover {
+      img {
+        transform: scale(1.08);
+      }
+      .viewBtn {
+        bottom: 10%;
+      }
+    }
+  }
+  .prodctCard {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+}
+
+// =============== product card end ==========
+
+// ==================faq ==================
+.faq {
+  .faq_accordian {
+    .accordion-item {
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      border: 1px solid $secondary;
+    }
+    .accordion-button {
+      background-color: $secondary;
+      color: #fff;
+      padding: 14px 16px;
+
+      &.collapsed {
+        background-color: $secondary;
+        border-color: $secondary;
+      }
+      &:focus {
+        border-color: transparent;
+        box-shadow: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+// ==================faq end==================

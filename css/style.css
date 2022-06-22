@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900");
 @media (min-width: 1300px) {
@@ -74,7 +75,7 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.6;
   color: #00235a;
   font-family: "Muli", sans-serif;
@@ -548,6 +549,57 @@ p {
 .products .prodctCard {
   border-radius: 4px;
   overflow: hidden;
+}
+
+.cyber-testimony-single {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.cyber-testimony-single p {
+  font-size: 15px;
+  color: #4e4e4e;
+  margin: 15px 0px 11px;
+  position: relative;
+}
+.cyber-testimony-single p::before {
+  content: "“";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  font-size: 100px;
+  line-height: 0;
+  color: rgba(0, 0, 0, 0.3607843137);
+}
+.cyber-testimony-single p::after {
+  content: "”";
+  position: absolute;
+  right: -40px;
+  bottom: -35px;
+  font-size: 100px;
+  line-height: 0;
+  color: rgba(0, 0, 0, 0.3607843137);
+}
+.cyber-testimony-single > h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #4a4a4a;
+}
+.cyber-testimony-single > h6 {
+  font-size: 16px;
+  color: #4e4e4e;
+  font-weight: 400;
+}
+
+.cyber-testimony-single-img {
+  text-align: center;
+  padding: 10px 0px;
+}
+.cyber-testimony-single-img img {
+  display: inline !important;
+  width: 100px !important;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .faq .faq_accordian .accordion-item {

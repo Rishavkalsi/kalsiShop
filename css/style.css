@@ -628,34 +628,53 @@ p {
 
 .contactPage {
   font-family: "Muli", sans-serif;
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .contactPage {
-    display: flex;
-    height: calc(100vh - 73px);
+    height: calc(100vh - 75px);
   }
 }
 .contactPage .contactPage_img {
-  flex-basis: 40%;
+  flex-basis: 50%;
   height: 100%;
-  background-image: url(../images/contactus.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+.contactPage .contactPage_img iframe {
+  min-height: 300px;
+  max-height: calc(100% - 6px);
 }
 @media screen and (max-width: 767px) {
   .contactPage .contactPage_img {
-    display: none;
+    flex-basis: 100%;
   }
 }
 .contactPage .contactPage_form {
-  flex-basis: 60%;
+  flex-basis: 50%;
   display: flex;
   align-items: center;
   height: 100%;
 }
+@media screen and (max-width: 767px) {
+  .contactPage .contactPage_form {
+    flex-basis: 100%;
+  }
+}
 .contactPage .contactPage_form .contactPage_formInner {
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
+  overflow-y: auto;
+  max-height: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .contactPage .contactPage_form .contactPage_formInner {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contactPage .contactPage_form .contactPage_formInner {
+    width: 100%;
+  }
 }
 .contactPage .contactPage_form label {
   font-size: 14px;

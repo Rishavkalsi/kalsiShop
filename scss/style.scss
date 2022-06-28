@@ -212,29 +212,41 @@
 // ==================contact page==================
 .contactPage {
   font-family: "Muli", sans-serif;
-  @include min(767) {
-    display: flex;
-    height: calc(100vh - 73px);
+  display: flex;
+  flex-wrap: wrap-reverse;
+  @include min(768) {
+    height: calc(100vh - 75px);
   }
   .contactPage_img {
-    flex-basis: 40%;
+    flex-basis: 50%;
     height: 100%;
-    background-image: url(../images/contactus.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    iframe {
+      min-height: 300px;
+      max-height: calc(100% - 6px);
+    }
     @include max(767) {
-      display: none;
+      flex-basis: 100%;
     }
   }
   .contactPage_form {
-    flex-basis: 60%;
+    flex-basis: 50%;
     display: flex;
     align-items: center;
     height: 100%;
-
+    @include max(767) {
+      flex-basis: 100%;
+    }
     .contactPage_formInner {
-      padding: 3rem 2rem;
+      padding: 2rem 2rem;
+      overflow-y: auto;
+      max-height: 100%;
+      @include min(1200) {
+        width: 80%;
+        margin: auto;
+      }
+      @include max(767) {
+        width: 100%;
+      }
     }
     label {
       font-size: 14px;

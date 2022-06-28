@@ -209,3 +209,48 @@
   }
 }
 // ==================faq end==================
+// ==================contact page==================
+.contactPage {
+  font-family: "Muli", sans-serif;
+  @include min(767) {
+    display: flex;
+    height: calc(100vh - 73px);
+  }
+  .contactPage_img {
+    flex-basis: 40%;
+    height: 100%;
+    background-image: url(../images/contactus.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include max(767) {
+      display: none;
+    }
+  }
+  .contactPage_form {
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .contactPage_formInner {
+      padding: 3rem 2rem;
+    }
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    input,
+    textarea,
+    select {
+      box-shadow: none;
+      font-size: 14px;
+    }
+    textarea {
+      max-height: 200px;
+      min-height: 100px;
+    }
+  }
+}
+// ==================contact end==================

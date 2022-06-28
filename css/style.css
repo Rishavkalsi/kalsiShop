@@ -30,7 +30,7 @@ html {
 
 body {
   font-family: "Rajdhani", sans-serif;
-  max-width: 2000px;
+  max-width: 2400px;
   margin: auto;
 }
 
@@ -185,6 +185,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   font-family: "Muli", sans-serif;
+  border: none;
 }
 .theme_button svg {
   max-width: 0;
@@ -623,5 +624,52 @@ p {
 }
 .faq .faq_accordian .accordion-button::after {
   display: none;
+}
+
+.contactPage {
+  font-family: "Muli", sans-serif;
+}
+@media screen and (min-width: 767px) {
+  .contactPage {
+    display: flex;
+    height: calc(100vh - 73px);
+  }
+}
+.contactPage .contactPage_img {
+  flex-basis: 40%;
+  height: 100%;
+  background-image: url(../images/contactus.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .contactPage .contactPage_img {
+    display: none;
+  }
+}
+.contactPage .contactPage_form {
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.contactPage .contactPage_form .contactPage_formInner {
+  padding: 3rem 2rem;
+}
+.contactPage .contactPage_form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.contactPage .contactPage_form input,
+.contactPage .contactPage_form textarea,
+.contactPage .contactPage_form select {
+  box-shadow: none;
+  font-size: 14px;
+}
+.contactPage .contactPage_form textarea {
+  max-height: 200px;
+  min-height: 100px;
 }
 /*# sourceMappingURL=style.css.map */

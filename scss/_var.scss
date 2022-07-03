@@ -1,7 +1,7 @@
 $primary: #e2272f;
 $secondary: #131921;
 $headingColor: #e2272f;
-$textColor: #00235a;
+$textColor: #4c5666;
 $bgColor: #f2f5f9;
 @mixin min($value) {
   @media screen and (min-width: ($value + "px")) {

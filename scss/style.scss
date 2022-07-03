@@ -130,7 +130,7 @@
 
 // =============== product card end ==========
 
-.cyber-testimony-single {
+.testimonial-single {
   text-align: center;
   width: 80%;
   margin: auto;
@@ -169,7 +169,7 @@
     font-weight: 400;
   }
 }
-.cyber-testimony-single-img {
+.testimonial-single-img {
   text-align: center;
   padding: 10px 0px;
   img {
@@ -266,3 +266,60 @@
   }
 }
 // ==================contact end==================
+// ==================product detail==================
+.productDetail {
+  .prodctDetail_content {
+    padding: 1rem;
+    h4 {
+      margin-bottom: 10px;
+    }
+    h5 {
+      margin: 10px 0;
+      font-weight: 700;
+    }
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+    }
+    input,
+    select {
+      box-shadow: none;
+      font-size: 15px;
+    }
+  }
+}
+// ==================product detail end==================
+.productInfo {
+  .productInfo_inner {
+    padding: 5%;
+    border: 1px solid #ededed;
+    box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.4);
+    .nav-tabs {
+      border: none;
+      justify-content: center;
+      .nav-item.show .nav-link {
+        border-color: transparent;
+      }
+      .nav-link {
+        color: #616161;
+        font-weight: 500;
+        padding: 0;
+        margin: 0 10px;
+        &:hover {
+          border-color: transparent;
+        }
+        &.active {
+          border-color: transparent transparent currentColor;
+          color: #000;
+        }
+      }
+    }
+  }
+  .productInfo_tabData {
+    padding: 1rem;
+  }
+  .productInfo_description {
+    text-align: center;
+  }
+}

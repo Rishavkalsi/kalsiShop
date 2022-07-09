@@ -85,49 +85,93 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsum repellendus,
                            ullam saepe nemo ipsa voluptatibus sed</p>
                         <form>
-                           <div class="my-2">
-                              <label for="Size" class="form-label">Size</label>
-                              <select class="form-select form-select-lg" id="Size" aria-label=".form-select-lg example">
-                                 <option selected disabled>choose an option</option>
-                                 <option value="1">Size S</option>
-                                 <option value="2">Size M</option>
-                                 <option value="3">Size L</option>
-                                 <option value="4">Size XL</option>
-                                 <option value="5">Size XXL</option>
-                              </select>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="my-2">
+                                    <label for="Size" class="form-label">Size</label>
+                                    <select class="form-select form-select-lg" id="Size"
+                                       aria-label=".form-select-lg example">
+                                       <option selected disabled>choose an option</option>
+                                       <option value="1">Size S</option>
+                                       <option value="2">Size M</option>
+                                       <option value="3">Size L</option>
+                                       <option value="4">Size XL</option>
+                                       <option value="5">Size XXL</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="my-2">
+                                    <label for="Color" class="form-label">Color</label>
+                                    <select class="form-select form-select-lg" id="Color"
+                                       aria-label=".form-select-lg example">
+                                       <option selected disabled>choose an option</option>
+                                       <option value="1">Red</option>
+                                       <option value="2">Green</option>
+                                       <option value="3">Blue</option>
+                                       <option value="4">Grey</option>
+                                       <option value="5">Black</option>
+                                    </select>
+                                 </div>
+                              </div>
                            </div>
-                           <div class="my-2">
-                              <label for="Color" class="form-label">Color</label>
-                              <select class="form-select form-select-lg" id="Color"
-                                 aria-label=".form-select-lg example">
-                                 <option selected disabled>choose an option</option>
-                                 <option value="1">Red</option>
-                                 <option value="2">Green</option>
-                                 <option value="3">Blue</option>
-                                 <option value="4">Grey</option>
-                                 <option value="5">Black</option>
-                              </select>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="my-2">
+                                    <label for="Color" class="form-label">Items</label>
+                                    <select class="form-select form-select-lg" id="Color"
+                                       aria-label=".form-select-lg example">
+                                       <option selected disabled>choose an option</option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                       <option value="5">5</option>
+                                       <option value="6">6</option>
+                                       <option value="7">7</option>
+                                       <option value="8">8</option>
+                                       <option value="9">9</option>
+                                       <option value="10">10</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="mb-3">
+                                    <label for="Title" class="form-label">Purpose of contact</label>
+                                    <select class="form-select form-select-lg mb-3" id="Title"
+                                       aria-label=".form-select-lg example">
+                                       <option selected disabled>Open this select menu</option>
+                                       <option value="1">Title One</option>
+                                       <option value="2"> Title Two</option>
+                                       <option value="3">Title Three</option>
+                                    </select>
+                                 </div>
+                              </div>
                            </div>
-                           <div class="my-2">
-                              <label for="Color" class="form-label">Items</label>
-                              <select class="form-select form-select-lg" id="Color"
-                                 aria-label=".form-select-lg example">
-                                 <option selected disabled>choose an option</option>
-                                 <option value="1">1</option>
-                                 <option value="2">2</option>
-                                 <option value="3">3</option>
-                                 <option value="4">4</option>
-                                 <option value="5">5</option>
-                                 <option value="6">6</option>
-                                 <option value="7">7</option>
-                                 <option value="8">8</option>
-                                 <option value="9">9</option>
-                                 <option value="10">10</option>
-                              </select>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email"
+                                       placeholder="Enter email address">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone number</label>
+                                    <input type="email" class="form-control" id="phone"
+                                       placeholder="Enter phone number">
+                                 </div>
+                              </div>
                            </div>
-                           <div class="my-4 text-center">
-                              <button class="theme_button secondaryBtn">Add to cart
-                              </button>
+
+                           <div class="mb-3">
+                              <label for="message" class="form-label">Message</label>
+                              <textarea class="form-control" id="message" rows="3"
+                                 placeholder="Write your message here"></textarea>
+                           </div>
+                           <div class="my-4 text-end">
+                              <button class="theme_button secondaryBtn">Send Request</button>
                            </div>
                         </form>
                   </div>
